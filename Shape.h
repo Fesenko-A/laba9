@@ -37,13 +37,7 @@ public:
 		cout << "Фігуру переміщено на вектор (" << moveX << ";" << moveY << ")" << endl;
 	}
 
-	virtual void Show() = 0 {	//	Показати фігуру на екрані
-		cout << "\nВиведення фігури на екран..." << endl;
-		cout << "Фігуру виведено на екран!" << endl;
-	}
+	virtual void Show() = 0;
 
-	virtual void Destroy() {	//	Знищення фігури
-		cout << "\nЗнищення фігури..." << endl;
-		cout << "\nФігуру знищено!" << endl;
-	}
+	virtual void Destroy() = 0;
 };
